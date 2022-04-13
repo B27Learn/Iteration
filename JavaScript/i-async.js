@@ -28,7 +28,7 @@ let k = 0;
 
 const timer = setInterval(() => {
   console.log('next ', k++);
-}, 10);
+}, 1);
 
 (async () => {
   for await (const number of range) {

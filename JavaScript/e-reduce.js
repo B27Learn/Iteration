@@ -10,5 +10,6 @@ const reduce = (fn, acc, [cur, ...rest]) => (
   cur === undefined ? acc : reduce(fn, fn(acc, cur), rest)
 );
 
+count = 0;
 const res2 = reduce(sum, 0, arr);
-console.log({ res2 });
+console.log({ res2, count });
